@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="./header.js"></script>
+  <link rel="stylesheet" href="./Header.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>header</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="logo">
+        <img src="./Images/supermna.jpeg" />
+      </div>
+
+      <nav id="navi" class="nav">
+        <ul>
+          <li><a class="list" href="#home">Home</a></li>
+          <li><a class="list" href="#about">About Us</a></li>
+          <li><a class="list" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <button class="button">Sign Up</button>
+        <button class="button">Log Out</button>
+        <button id="menu" class="menubtn">Menu</button>
+      </div>
+    </header>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./Images/supermna.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./Images/spidermanjpeg.jpeg" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+
+    <!-- Services -->
+
+    <div class="allign">
+      <div class="servics flex">
+        <img class="service_img" src="./Images/thor.jpeg" />
+
+        <div class="service_desc">
+          <h1>Thor</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
+            molestias deleniti a nam veniam. Nisi quasi accusamus quo optio
+            eaque molestiae placeat dolorum commodi dicta, velit tempora
+            recusandae eligendi. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ex ut molestias deleniti a nam veniam. Nisi quasi
+            accusamus quo optio eaque molestiae placeat dolorum commodi dicta,
+            velit tempora recusandae eligendi.
+          </p>
+        </div>
+      </div>
+
+      <div class="servics flex">
+        <img class="service_img" src="./Images/batman.jpeg" />
+        <div class="service_desc">
+          <h1>Batman</h1>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
+            molestias deleniti a nam veniam. Nisi quasi accusamus quo optio
+            eaque molestiae placeat dolorum commodi dicta, velit tempora
+            recusandae eligendi. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ex ut molestias deleniti a nam veniam. Nisi quasi
+            accusamus quo optio eaque molestiae placeat dolorum commodi dicta,
+            velit tempora recusandae eligendi.
+          </p>
+        </div>
+      </div>
+
+      <div class="servics flex">
+        <img class="service_img" src="./Images/spidermanjpeg.jpeg" />
+        <div class="service_desc">
+          <h1>Spiderman</h1>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
+            molestias deleniti a nam veniam. Nisi quasi accusamus quo optio
+            eaque molestiae placeat dolorum commodi dicta, velit tempora
+            recusandae eligendi. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ex ut molestias deleniti a nam veniam. Nisi quasi
+            accusamus quo optio eaque molestiae placeat dolorum commodi dicta,
+            velit tempora recusandae eligendi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

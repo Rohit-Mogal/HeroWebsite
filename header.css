@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: black;
+
+  /* list-style: none; */
+}
+
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+header {
+  /* position: relative; */
+  display: flex;
+  box-shadow: rgba(237, 7, 7, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6.563;
+  background-color: black;
+  border: rgb(255, 225, 0);
+}
+
+.logo img {
+  box-shadow: rgba(226, 6, 6, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  height: 5.625rem;
+  width: 9.375rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: wheat;
+  font-size: 1.2rem;
+}
+
+.button {
+  box-shadow: rgba(226, 212, 212, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 0.625rem;
+  color: blanchedalmond;
+  border-radius: 20%;
+}
+
+.menubtn {
+  background-color: rgb(12, 10, 10);
+  padding: 0.405rem;
+  color: rgb(120, 118, 118);
+  display: none;
+  border-radius: 10%;
+}
+
+/* Slider */
+
+.swiper {
+  margin-top: 2%;
+  height: 30%;
+  width: 50%;
+  align-self: center;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Service */
+.flex {
+  display: flex;
+  margin: 10px;
+}
+
+.service_img {
+  padding: 10px;
+  box-shadow: rgba(195, 188, 188, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.service_desc {
+  padding: 30px;
+  align-self: center;
+  color: blanchedalmond;
+}
+
+.servics:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* MEDIA */
+@media (max-width: 500px) {
+  nav ul li a {
+    color: rgb(214, 92, 84);
+    font-size: 1.063rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .menubtn {
+    display: inline;
+    font-size: 0.625rem;
+  }
+
+  .list {
+    display: block;
+    font-size: 9px;
+    font-family: cursive;
+  }
+
+  .button {
+    display: none;
+  }
+
+  nav {
+    background-color: rgb(249, 246, 243);
+    position: absolute;
+    left: 80%;
+    top: 18%;
+    font-size: 0.45rem;
+    z-index: 10;
+    transition-timing-function: ease-out;
+    transition: 0.4s;
+    transform: translateY(-500%);
+  }
+
+  a:hover {
+    color: rgb(2, 15, 15);
+  }
+  .navtoggle {
+    transition-timing-function: ease-in;
+    transition: 0.4s;
+    transform: translateY(0%);
+  }
+
+  swiper-container {
+    /* position: absolute; */
+    align-items: start;
+    width: 20rem;
+    height: 12rem;
+  }
+
+  /* SERVICE */
+  .service_img {
+    width: 7rem;
+    height: 5rem;
+    padding: auto;
+  }
+  .service_desc {
+    font-size: 3%;
+    padding: 0px;
+  }
+}
